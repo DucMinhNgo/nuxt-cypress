@@ -22,6 +22,7 @@
 </template>
 <script setup>
 const { product } = defineProps(["product"]);
+console.log(product);
 </script>
 <style scoped>
 img {
