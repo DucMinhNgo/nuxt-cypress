@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
@@ -23,6 +24,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "cypress-xpath": "^2.0.1",
     "vite-plugin-vuetify": "^2.0.3"
   }
 }
