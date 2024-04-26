@@ -51,3 +51,11 @@ etc...
 3. Folder structure
 
 ![alt text](capture/image.png)
+
+4. Interacting with Element
+
+- Radio Button and Checkboxes
+
+# References:
+
+https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements
