@@ -1861,6 +1861,11 @@ b4a@^1.6.4:
   resolved "https://registry.yarnpkg.com/b4a/-/b4a-1.6.6.tgz#a4cc349a3851987c3c4ac2d7785c18744f6da9ba"
   integrity sha512-5Tk1HLk6b6ctmjIkAcU/Ujv/1WqiDl0F0JdRCR80VsOcUlHcu7pWeWRlOqQLHfDEsVx9YH/aif5AG4ehoCtTmg==
 
+badges@^4.40.0:
+  version "4.40.0"
+  resolved "https://registry.yarnpkg.com/badges/-/badges-4.40.0.tgz#4e5270885a44d8153e03baed4f1e28bedb348a1b"
+  integrity sha512-PjeBM7oVzkcLDv62aQZZGOB1NPOzPRAoJr6cxDRFfeYxjK7tSOtNkOvcWxxAUZLpXTS3G6K+QmwyrEhLfbWNoA==
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"

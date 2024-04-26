@@ -29,3 +29,21 @@ https://www.youtube.com/watch?v=cnnkb0AuIFI&list=PLUDwpEzHYYLvA7QFkC1C0y0pDPqYS5
   > yarn add cypress-xpath
 
 cy.get(Locator)
+
+# Cypress Assertions
+
+1. Implicit assertions
+
+- should
+- and
+- include
+- exist
+- have.length
+- have.value
+
+etc...
+
+2. Explicit assertions
+
+- expect - BDD: Behavior Driven Development
+- assert - TDD: Test Driven Development
