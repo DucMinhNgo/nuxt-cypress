@@ -47,3 +47,7 @@ etc...
 
 - expect - BDD: Behavior Driven Development
 - assert - TDD: Test Driven Development
+
+3. Folder structure
+
+![alt text](capture/image.png)
