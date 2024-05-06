@@ -26,4 +26,20 @@ describe("Handle dropdown", () => {
 
         cy.get('#firstHeading').should('have.text', 'Delhi University');
     })
+
+    it('Dynamic dropdown', () => {
+        cy.visit('https://www.google.com/');
+
+        cy.get("textarea[name='q']").type("cypress automation tool");
+
+        cy.get('div.wM6W7d').should('have.length', 13);
+
+        cy.get("div.wM6W7d>span").each(($el, index, $list) => {
+            if ($el.text() == 'cypress automation tool cost') {
+                cy.wrap($el).click();
+            }
+        })
+
+        cy.get("textarea[name='q']").should('have.value', 'cypress automation tool cost');
+    })
 })
