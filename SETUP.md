@@ -58,6 +58,10 @@ etc...
 
 5. Dropdown
 
+# Cypress Component (config)
+
+https://www.codybontecou.com/cypress-component-testing-with-nuxt-3.html
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements

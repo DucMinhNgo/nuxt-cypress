@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "cypress-xpath": "^2.0.1",
+    "vite": "4.0.0",
     "vite-plugin-vuetify": "^2.0.3"
   }
 }
