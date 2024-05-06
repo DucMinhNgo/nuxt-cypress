@@ -10,6 +10,7 @@
       voluptas? Reiciendis nisi officiis blanditiis deserunt perferendis quos
       velit placeat.
     </p>
+    <CountrySelect />
   </div>
 </template>
 

@@ -56,6 +56,8 @@ etc...
 
 - Radio Button and Checkboxes
 
+5. Dropdown
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements
