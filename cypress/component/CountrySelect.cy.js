@@ -1,8 +1,8 @@
-import CountrySelect from '../../components/L1_Atom/CountrySelect.vue'
+import L1AtomCountrySelect from '../../components/L1_Atom/CountrySelect.vue'
 
-describe('<CountrySelect />', () => {
+describe('<L1AtomCountrySelect />', () => {
   it('renders', () => {
-    cy.mount(CountrySelect);
+    cy.mount(L1AtomCountrySelect, { props: { products: [{name: 'Dustin', id: 'Dustin'}] } });
 
     cy.get('select[name="country"]').select('Chile').should('have.value', 'Chile');
   })

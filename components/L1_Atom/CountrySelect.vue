@@ -1,6 +1,9 @@
 <template>
   <div>
     <select name="country" class="border-black border-2">
+      <option v-for="p in products" :key="p.id">
+        {{ p.name }}
+      </option>
       <option>Afghanistan</option>
       <option>Albania</option>
       <option>Algeria</option>
@@ -244,12 +247,9 @@
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    return {}
-  },
-}
+<script setup>
+const { products } = defineProps(['products'])
+console.log(products)
 </script>
 
 <style lang="scss" scoped></style>
