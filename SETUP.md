@@ -62,6 +62,14 @@ etc...
 
 https://www.codybontecou.com/cypress-component-testing-with-nuxt-3.html
 
+# prettier
+
+https://viblo.asia/p/cai-dat-eslint-prettier-cho-nuxt-3-Yym40ZjjL91
+
+# Graphql
+
+https://viblo.asia/p/su-dung-graphql-trong-du-an-nuxt-p1-aWj53n2ol6m
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements

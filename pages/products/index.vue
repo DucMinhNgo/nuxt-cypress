@@ -2,37 +2,27 @@
   <div>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="p in products" :key="p.id">
-        <ProductCard :product="p" />
+        <L1AtomProductCard :product="p" />
       </div>
     </div>
   </div>
 </template>
-  
-  <script>
-export default {
-  async setup() {
-    definePageMeta({
-      layout: "products",
-    });
 
-    // fetch products data
-    const { data: products } = await useFetch(
-      "https://fakestoreapi.com/products"
-    );
+<script setup lang="ts">
+definePageMeta({
+  layout: 'products',
+})
 
-    useHead({
-      title: "Nuxt Dustin | Pro",
-      meta: [{ name: "description", content: "Nuxt 3 Dustin Pro" }],
-    });
+// fetch products data
+const { data: products } = await useFetch('https://fakestoreapi.com/products')
 
-    return {
-      products,
-    };
-  },
-};
+useHead({
+  title: 'Nuxt Dustin | Pro',
+  meta: [{ name: 'description', content: 'Nuxt 3 Dustin Pro' }],
+})
 </script>
-  
-  <style lang="scss" scoped>
+
+<style lang="scss" scoped>
 h2 {
   margin-bottom: 20px;
   font-size: 36px;

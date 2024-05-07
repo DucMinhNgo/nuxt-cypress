@@ -10,16 +10,16 @@
       voluptas? Reiciendis nisi officiis blanditiis deserunt perferendis quos
       velit placeat.
     </p>
-    <CountrySelect />
+    <L1AtomCountrySelect />
   </div>
 </template>
 
 <script>
 export default {
   setup() {
-    return {};
+    return {}
   },
-};
+}
 </script>
 
 <style lang="scss" scoped>

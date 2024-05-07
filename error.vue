@@ -8,9 +8,8 @@
 </template>
 
 <script setup>
-defineProps(["error"]);
-const handleClearError = () => clearError({ redirect: "/" });
+defineProps(['error'])
+const handleClearError = () => clearError({ redirect: '/' })
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

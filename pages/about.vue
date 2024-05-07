@@ -13,19 +13,19 @@
     <div>{{ data }}</div>
   </div>
 </template>
-  
-  <script>
+
+<script>
 export default {
   async setup() {
-    const { data } = await useFetch("/api/currency/ARB");
+    const { data } = await useFetch('/api/currency/ARB')
     return {
       data,
-    };
+    }
   },
-};
+}
 </script>
-  
-  <style lang="scss" scoped>
+
+<style lang="scss" scoped>
 h2 {
   margin-bottom: 20px;
   font-size: 36px;
