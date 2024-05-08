@@ -11,6 +11,15 @@
       velit placeat.
     </p>
     <L1AtomCountrySelect :products="products" />
+    <div
+      class="static text"
+      :class="{ active: isActive, 'text-danger': hasError }"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+      voluptatem impedit, pariatur dolore aut animi! Laudantium ex maxime
+      aspernatur perferendis?
+    </div>
+    <div :class="classObject"></div>
   </div>
 </template>
 
@@ -22,6 +31,13 @@
 import '~/assets/css/first.css'
 const { data } = await useFetch('/api/address')
 const products = data.value.addressData
+const isActive = ref(true)
+const hasError = ref(false)
+const classObject = reactive({
+  active: true,
+  'text-danger': false,
+})
+const color = ref('red')
 
 // Caution: Dynamic imports are not server-side compatible
 import('~/assets/css/first.css')
@@ -43,5 +59,9 @@ h2 {
 
 p {
   margin: 20px 0;
+}
+
+.text {
+  color: v-bind(color);
 }
 </style>

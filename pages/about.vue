@@ -17,6 +17,9 @@
 <script>
 export default {
   async setup() {
+    definePageMeta({
+      middleware: 'auth',
+    })
     const { data } = await useFetch('/api/currency/ARB')
     return {
       data,
