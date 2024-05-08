@@ -22,7 +22,7 @@
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.19",
     "badges": "^4.40.0",
-    "cypress": "^13.8.0",
+    "cypress": "^13.8.1",
     "nuxt": "^3.11.2",
     "postcss": "^8.4.38",
     "prettier": "3.2.4",
