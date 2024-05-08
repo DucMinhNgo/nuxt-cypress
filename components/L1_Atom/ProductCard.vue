@@ -8,8 +8,13 @@
   </div>
 </template>
 
-<script setup>
-const { product } = defineProps(['product'])
+<script setup lang="ts">
+const { product } = withDefaults(
+  defineProps<{
+    product: Object
+  }>(),
+  {},
+)
 </script>
 
 <style scoped>

@@ -7,8 +7,14 @@
   </div>
 </template>
 
-<script setup>
-defineProps(['error'])
+<script setup lang="ts">
+const { error } = withDefaults(
+  defineProps<{
+    error: Object
+  }>(),
+  {},
+)
+
 const handleClearError = () => clearError({ redirect: '/' })
 </script>
 

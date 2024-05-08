@@ -10,14 +10,16 @@
       voluptas? Reiciendis nisi officiis blanditiis deserunt perferendis quos
       velit placeat.
     </p>
-    <L1AtomCountrySelect />
+    <L1AtomCountrySelect :products="products" />
   </div>
 </template>
 
 <script>
 export default {
-  setup() {
-    return {}
+  async setup() {
+    const { data } = await useFetch('/api/address')
+    const products = data.value.addressData
+    return { products }
   },
 }
 </script>
