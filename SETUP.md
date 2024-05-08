@@ -82,6 +82,8 @@ https://nuxt.com/docs/getting-started/error-handling
 
 https://typicode.github.io/husky/get-started.html
 
+![alt text](capture/image-1.png)
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements

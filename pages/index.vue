@@ -14,14 +14,25 @@
   </div>
 </template>
 
-<script>
-export default {
-  async setup() {
-    const { data } = await useFetch('/api/address')
-    const products = data.value.addressData
-    return { products }
-  },
-}
+<script setup>
+// const appConfig = useAppConfig()
+// console.log(appConfig)
+
+// Use a static import for server-side compatibility
+import '~/assets/css/first.css'
+const { data } = await useFetch('/api/address')
+const products = data.value.addressData
+
+// Caution: Dynamic imports are not server-side compatible
+import('~/assets/css/first.css')
+useHead({
+  link: [
+    {
+      rel: 'stylesheet',
+      href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css',
+    },
+  ],
+})
 </script>
 
 <style lang="scss" scoped>

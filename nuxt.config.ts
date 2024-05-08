@@ -1,13 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/_colors.scss" as *;'
+        }
+      }
+    }
+  },
   devtools: { enabled: true },
   modules: [
     // ...
     '@nuxt/eslint',
     // ...
   ],
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css', 'animate.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -22,11 +31,13 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+        { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
       ]
     }
   },
   runtimeConfig: {
     currencyKey: process.env.CURRENCY_API_KEY,
+    dustinKey: "DUSTIN_KEY",
   },
   // css: ['@mdi/font/css/materialdesignicons.min.css'],
   // build: {

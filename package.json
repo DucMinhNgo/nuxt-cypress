@@ -12,13 +12,14 @@
     "cypress:run": "cypress run",
     "format": "prettier */*.vue",
     "lint:prettier": "prettier . --check",
-    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .vue --fix",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .vue --fix && yarn format",
     "prepare": "husky"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "@nuxt/eslint": "^0.3.10",
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.19",
     "badges": "^4.40.0",
     "cypress": "^13.8.0",
