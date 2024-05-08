@@ -70,6 +70,18 @@ https://viblo.asia/p/cai-dat-eslint-prettier-cho-nuxt-3-Yym40ZjjL91
 
 https://viblo.asia/p/su-dung-graphql-trong-du-an-nuxt-p1-aWj53n2ol6m
 
+# Example test
+
+https://www.cypress.io/blog/2017/11/28/testing-vue-web-application-with-vuex-data-store-and-rest-backend
+
+# Doc
+
+https://nuxt.com/docs/getting-started/error-handling
+
+# Husky
+
+https://typicode.github.io/husky/get-started.html
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements
