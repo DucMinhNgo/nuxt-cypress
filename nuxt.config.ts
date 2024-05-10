@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+  // ssr: false,
   vite: {
     css: {
       preprocessorOptions: {
@@ -11,11 +12,9 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: [
+  modules: [// ...
     // ...
-    '@nuxt/eslint',
-    // ...
-  ],
+    '@nuxt/eslint', "@pinia/nuxt"],
   css: ['~/assets/css/main.css', 'animate.css'],
   postcss: {
     plugins: {

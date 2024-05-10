@@ -84,6 +84,16 @@ https://typicode.github.io/husky/get-started.html
 
 ![alt text](capture/image-1.png)
 
+# Data fetching
+
+useFetch, useAsyncData, $fetch
+
+# State Management
+
+# Deploy
+
+> node .output/server/index.mjs
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements
