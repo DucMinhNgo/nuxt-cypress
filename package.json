@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "format": "prettier */*.vue",
+    "format": "prettier */*.vue */*.js */*.ts */*.json",
     "lint:prettier": "prettier . --check",
     "lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .vue --fix && yarn format",
     "prepare": "husky"
@@ -25,6 +25,8 @@
     "badges": "^4.40.0",
     "crypto-js": "^4.2.0",
     "cypress": "^13.8.0",
+    "firebase": "^9.17.1",
+    "firebase-admin": "^11.5.0",
     "nuxt": "^3.11.2",
     "postcss": "^8.4.38",
     "prettier": "3.2.4",
@@ -32,7 +34,8 @@
     "superjson": "^2.2.1",
     "tailwindcss": "^3.4.3",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",

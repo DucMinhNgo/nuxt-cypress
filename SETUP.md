@@ -94,6 +94,14 @@ useFetch, useAsyncData, $fetch
 
 > node .output/server/index.mjs
 
+# Firebase Messaging
+
+https://blog.devla.la/blog/103
+
+https://firebase.nuxtjs.org/guide/getting-started.html
+
+https://github.com/adityar15/nuxt3metataggenerator/blob/master/components/FormGroup.vue
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements
