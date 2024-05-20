@@ -102,6 +102,10 @@ https://firebase.nuxtjs.org/guide/getting-started.html
 
 https://github.com/adityar15/nuxt3metataggenerator/blob/master/components/FormGroup.vue
 
+# State
+
+![alt text](capture/image-2.png)
+
 # References:
 
 https://www.numpyninja.com/post/cypress-part-2-css-xpath-locators-assertions-folder-structure-interacting-with-webelements

@@ -1,6 +1,6 @@
 import { getAuth, setPersistence, signInWithEmailAndPassword, 
     browserLocalPersistence,
-    createUserWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth"
+    createUserWithEmailAndPassword, signOut, onAuthStateChanged, signInWithCustomToken } from "firebase/auth"
 
 export default function useAuth() {
   const user = useState("userStore", () => ({}))
@@ -26,7 +26,7 @@ export default function useAuth() {
       signInWithEmailAndPassword(auth, email, password).then((userDetails) => {
         user.value = userDetails.user
         userDetails.user.getIdToken().then((token) => {
-          serverAuth(token)
+          serverAuth(token);
         })
       })
     })
@@ -39,7 +39,6 @@ export default function useAuth() {
   function signUp({ email, password, name }) {
     resetErrors()
     const validatedData = useAuthValidator({ email, password, name }, "signup")
-    console.log(validatedData);
     if(!validatedData.flag){
         errorBag.value = validatedData
         return
@@ -48,7 +47,7 @@ export default function useAuth() {
       createUserWithEmailAndPassword(auth, email, password).then((userDetails) => {
         user.value = userDetails.user
         userDetails.user.getIdToken().then((token) => {
-            serverAuth(token)
+            serverAuth(token);
         })
       })
     })
@@ -68,11 +67,17 @@ export default function useAuth() {
         body: JSON.stringify({token})
     }).then(res => {
         if(res.statusCode == 200){
-            navigateTo("/dashboard")
+            navigateTo("/")
         }
     }).catch(err =>{
         alert("Invalid creds.....")
     })
+  }
+
+  async function verifyToken(id) {
+    console.log({id});
+    const result = await getAppCheck().verifyToken(id);
+    console.log(result);
   }
 
   onAuthStateChanged(auth, (userDetails) => {
@@ -82,5 +87,5 @@ export default function useAuth() {
     
   })
 
-  return { user, login, signUp, logout, errorBag }
+  return { user, login, signUp, logout, errorBag, verifyToken }
 }

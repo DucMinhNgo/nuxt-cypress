@@ -9,9 +9,5 @@ describe('Crypto', () => {
         const bytes  = CryptoJS.AES.decrypt(ciphertext, 'secret key 123');
         const originalText = bytes.toString(CryptoJS.enc.Utf8);
     
-        console.log({ciphertext});
-        console.log({bytes});
-        console.log({originalText});
-        console.log({originalText}); // 'my message'
       })
 });

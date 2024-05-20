@@ -1,7 +1,6 @@
 import { z } from "zod"
 
 export default function useAuthValidator({ email, password, name }, type) {
-    console.log({email, password, name});
   let body;
 
   try {
