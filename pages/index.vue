@@ -24,6 +24,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth',
+})
 // const appConfig = useAppConfig()
 // console.log(appConfig)
 

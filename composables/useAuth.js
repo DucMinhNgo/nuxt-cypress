@@ -62,9 +62,9 @@ export default function useAuth() {
   }
 
   function serverAuth(token){
-    $fetch("api/login", {
+    $fetch("api/firebase", {
         method: "POST",
-        body: JSON.stringify({token})
+        body: JSON.stringify({token, type: "login"})
     }).then(res => {
         if(res.statusCode == 200){
             navigateTo("/")

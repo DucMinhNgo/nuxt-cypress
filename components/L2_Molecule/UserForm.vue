@@ -25,10 +25,15 @@
       :error-message="errorBag.password"
     />
 
-    <div class="text-center">
+    <div class="text-center flex justify-between">
       <L1AtomButton class="bg-blue-500 text-white w-56" type="submit">
         {{ formProps.type == 'signin' ? 'Login' : 'Register' }}
       </L1AtomButton>
+      <NuxtLink
+        class="hover:underline-offset-0"
+        :to="formProps.type == 'signin' ? '/signup' : '/signin'"
+        >{{ formProps.type == 'signin' ? 'Register' : 'Login' }}</NuxtLink
+      >
     </div>
   </form>
 </template>

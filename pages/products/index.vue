@@ -11,6 +11,7 @@
 <script setup>
 definePageMeta({
   layout: 'products',
+  middleware: 'auth',
 })
 
 // fetch products data

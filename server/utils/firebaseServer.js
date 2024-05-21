@@ -1,6 +1,6 @@
 import {cert, getApps, initializeApp} from 'firebase-admin/app';
 
-export default function firebaseServer() {
+export default function firebaseServer(appName) {
     const {
         type,
         projectId,
@@ -27,8 +27,10 @@ export default function firebaseServer() {
         client_x509_cert_url: clientX509CertUrl,
         universe_domain: universeDomain
     };
+    console.log(getApps.length);
     if (getApps.length == 0) {
         initializeApp({
+            appName,
             credential: cert(firebaseConfig)
         })
     }

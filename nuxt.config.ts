@@ -60,6 +60,8 @@ export default defineNuxtConfig({
       clientX509CertUrl: process.env.FIREBASE_CLIENT_CERT_URL,
       universeDomain: process.env.FIREBASE_UNIVERSE_DOMAIN,
 
+      // backend
+      backendUri: process.env.BACKEND_URL,
     },
     currencyKey: process.env.CURRENCY_API_KEY,
     dustinKey: "DUSTIN_KEY",
