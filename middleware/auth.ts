@@ -9,6 +9,9 @@ export default defineNuxtRouteMiddleware(async () => {
     const { backendUri } = useRuntimeConfig().public;
     const { token } = await $fetch('/api/cookie');
 
+    console.log(token);
+
+
     if (!token) {
         return navigateTo('/signin');
     }

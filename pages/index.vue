@@ -24,14 +24,14 @@
 </template>
 
 <script setup>
-definePageMeta({
-  middleware: 'auth',
-})
 // const appConfig = useAppConfig()
 // console.log(appConfig)
 
 // Use a static import for server-side compatibility
 import '~/assets/css/first.css'
+definePageMeta({
+  middleware: 'auth',
+})
 const { data } = await useFetch('/api/address')
 const products = data.value.addressData
 const isActive = ref(true)

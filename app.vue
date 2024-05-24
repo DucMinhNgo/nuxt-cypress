@@ -9,7 +9,6 @@ const color = useColor()
 // await callOnce(async () => {
 //   websiteConfig.value = await $fetch('https://my-cms.com/api/website-config')
 // })
-console.log('FIRST')
 </script>
 <template>
   <div>

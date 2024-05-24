@@ -75,9 +75,7 @@ export default function useAuth() {
   }
 
   async function verifyToken(id) {
-    console.log({id});
     const result = await getAppCheck().verifyToken(id);
-    console.log(result);
   }
 
   onAuthStateChanged(auth, (userDetails) => {

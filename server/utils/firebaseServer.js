@@ -27,7 +27,7 @@ export default function firebaseServer(appName) {
         client_x509_cert_url: clientX509CertUrl,
         universe_domain: universeDomain
     };
-    console.log(getApps.length);
+    // console.log(getApps.length);
     if (getApps.length == 0) {
         initializeApp({
             appName,
