@@ -7,3 +7,7 @@ https://codelearn.io/sharing/bind-call-va-apply-trong-javascript
 
 - bind hàm này không gọi trực tiếp mà sẽ trả về 1 hàm mới, về cách truyền tham
   số thì giống call
+
+# Rxjs
+
+https://viblo.asia/p/tim-hieu-ve-rxjs-p1-1VgZvVDOZAw

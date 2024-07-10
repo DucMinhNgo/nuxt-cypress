@@ -55,7 +55,7 @@ const userForm = reactive({
 const { errorBag, login, signUp } = useAuth()
 
 function processForm() {
-  if (formProps.type == 'signin') login(userForm)
+  if (formProps.type === 'signin') login(userForm)
   else signUp(userForm)
 }
 </script>
